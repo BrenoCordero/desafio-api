@@ -19,7 +19,14 @@ public class Principal {
         System.out.println("Gostaria de pesquisar por qual dessas categorias:");
         var categoria = leitor.nextLine();
 
-        var resultado =api.obterDados(URI_FIPE +"/" +categoria.toLowerCase() + "/marcas");
-        System.out.println(resultado);
+        var json =api.obterDados(URI_FIPE +"/" +categoria.toLowerCase() + "/marcas");
+        System.out.println(json);
+
+        System.out.println("Gostaria de pesquisar por qual modelo dessasmarcas");
+        var modelo = leitor.nextLine();
+        json =api.obterDados(URI_FIPE +"/" +categoria.toLowerCase() + "/marcas/"+modelo+"/modelos");
+        System.out.println("Modelos"+ json);
+
+
     }
 }
