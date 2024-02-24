@@ -1,11 +1,9 @@
 package com.br.breno.desafioapi.service;
 
-import com.br.breno.desafioapi.model.Marca;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.List;
-import java.util.Objects;
 
 public class ConverteDadosImpl implements ConverteDados {
 
